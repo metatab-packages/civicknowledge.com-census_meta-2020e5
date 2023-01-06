@@ -1,0 +1,31 @@
+Declare,metatab-latest
+Title,Metadata for the 2020 ACS
+Description,
+Identifier,9f671751-bc54-4ff9-8044-3abd376c630d
+Name,civicknowledge.com-census_meta-2020e5-1.1.1
+Dataset,census_meta
+Origin,civicknowledge.com
+Time,2020e5
+Space,
+Grain,
+Variant,
+Version,1.1.1
+Version.Major,1
+Version.Minor,1
+Version.Patch,1
+Created,2023-01-06T17:07:17
+Modified,2023-01-06T17:07:19
+Giturl,https://github.com/CivicKnowledge/autosoc.git
+
+Section,Contacts,Email,Organization,Url
+Wrangler,Eric Busboom,eric@civicknowledge.com,Civic Knowledge,http://civicknowledge.com
+
+Section,Documentation,Title,Description,
+Documentation,file:README.md,README,,
+
+Section,References,Name,Description,
+
+Section,Resources,Name,Description,
+Datafile,notebooks/build.ipynb#paths_df,paths,"Column paths, processed by GPT"
+Datafile,notebooks/build.ipynb#metadata_df,metadata
+Section,Schema,DataType,AltName,Description
