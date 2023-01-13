@@ -2,19 +2,19 @@ Declare,metatab-latest
 Title,Metadata for the 2020 ACS
 Description,Deatilsed metadata for ACS releases.
 Identifier,9f671751-bc54-4ff9-8044-3abd376c630d
-Name,civicknowledge.com-census_meta-2020e5-2.1.1
+Name,civicknowledge.com-census_meta-2020e5-2.2.1
 Dataset,census_meta
 Origin,civicknowledge.com
 Time,2020e5
 Space,
 Grain,
 Variant,
-Version,2.1.1
+Version,2.2.1
 Version.Major,2
-Version.Minor,1
+Version.Minor,2
 Version.Patch,1
 Created,2023-01-06T17:07:17
-Modified,2023-01-13T01:02:55
+Modified,2023-01-13T17:58:28
 Giturl,https://github.com/metatab-packages/civicknowledge.com-census_meta-2020e5.git
 ""
 Section,Contacts,Email,Organization,Url
@@ -26,17 +26,11 @@ Documentation,file:README.md,README,,
 Section,References,Name,Description,
 ""
 Section,Resources,Name,Description,
-Datafile,notebooks/build.ipynb#paths_df,paths,"Column paths, processed by GPT",
-Datafile,notebooks/build.ipynb#metadata_df,metadata,,
+Datafile,notebooks/build.ipynb#mdf,metadata,Combined columns and tables,
 Datafile,notebooks/build.ipynb#tdf,tables,,
 Datafile,notebooks/build.ipynb#cdf,columns,,
 ""
 Section,Schema,DataType,AltName,Description,Has_Codes
-Table,paths,,,,
-Table.Column,unique_id,string,,,
-Table.Column,path,text,,,
-Table.Column,name,string,,,
-Table.Column,description,text,,,
 Table,metadata,,,,
 Table.Column,table_id,string,,,
 Table.Column,title,string,,,
@@ -54,9 +48,6 @@ Table.Column,raceeth,string,,,
 Table.Column,age,string,,,
 Table.Column,poverty_status,string,,,
 Table.Column,path,text,,,
-Table.Column,restriction_str,string,,,
-Table.Column,rest_description,string,,,
-Table.Column,col_desc,string,,,
 Table,tables,,,,
 Table.Column,table_id,string,,,
 Table.Column,title,string,,,
