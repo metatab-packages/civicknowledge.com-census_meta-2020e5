@@ -391,7 +391,7 @@ def sex_str(v, age):
 def restriction_str(r: pd.Series):
     rest_parts = [
         sex_str(r.sex, r.age),
-        raceeth_str(r.raceeth) or raceeth_str(r.race),
+        raceeth_str(r.raceeth) or raceeth_str(r.table_raceeth),
         age_str(r.age),
         poverty_str(r.poverty_status),
     ]
@@ -416,13 +416,13 @@ def add_rest_str(tdf, cdf):
     """
 
     t = tdf.rename(
-        columns={"sex": "table_sex", "age": "table_age", "age_range": "table_age_range"}
+        columns={"sex": "table_sex", "age": "table_age", "age_range": "table_age_range",
+                 'raceeth': 'table_raceeth'}
     ).merge(cdf, on="table_id")
 
     t["restriction_str"] = t.apply(restriction_str, axis=1)
 
     return t
-
 
 def make_restricted_description(r):
     try:
