@@ -1,1 +1,3 @@
 metapack-build
+openai
+more-itertools
