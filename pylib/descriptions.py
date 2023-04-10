@@ -32,7 +32,7 @@ def poverty(v):
 
 
 def description(r):
-    vals = [r.sex, r.raceeth, age(r.age), poverty(r.poverty_status), path(r.path)]
+    vals = [r.sex, r.race, age(r.age), poverty(r.poverty_status), path(r.path)]
 
     vals = [e for e in vals if e != 'all']
 
