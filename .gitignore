@@ -9,3 +9,4 @@ _packages
 *.pyc
 .DS_Store
 __pycache__/
+cache
